@@ -93,12 +93,12 @@ class MyDocument extends Document {
           {config.appearance === 'auto'
             ? (
             <>
-            <meta name="theme-color" content={config.lightBackground} media="(prefers-color-scheme: light)"/>
+            <meta name="theme-color" content={config.darkBackground} media="(prefers-color-scheme: dark)"/>
             <meta name="theme-color" content={config.darkBackground} media="(prefers-color-scheme: dark)"/>
             </>
               )
             : (
-            <meta name="theme-color" content={config.appearance === 'dark' ? config.darkBackground : config.lightBackground} />
+            <meta name="theme-color" content={config.appearance === 'dark' ? config.darkBackground : config.darkBackground} />
               )
           }
           {/* To ensure the initial background color follows media preference when ThemeProvider is
